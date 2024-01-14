@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Phil Curran, M.S.</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      .monogram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li class="monogram">
+            <img class="gear" src="./images/gear.svg" alt="" />
+            <img class="pc" src="./images//pc.svg" alt="" />
+          </li>
+          <li>
+            <a href="./index.html"
+              ><span class="material-symbols-outlined"> home </span> Home</a
+            >
+          </li>
+          <li>
+            <a href="./projects.html"
+              ><span class="material-symbols-outlined"> build </span>Projects</a
+            >
+          </li>
+          <li>
+            <a href="./resume.html"
+              ><span class="material-symbols-outlined"> description </span>
+              Resume</a
+            >
+          </li>
+          <li class="active">
+            <a href="./about.html">
+              <span class="material-symbols-outlined"> contact_support </span
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="contact">
+        <h2 class="centered">Let's talk!</h2>
+        <form action="submit">
+          <p>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" value="First and Last" />
+          </p>
+          <p>
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" value="john@doe.org" />
+          </p>
+          <p>
+            <label for="message">Message:</label><br />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="What's on your mind?"
+            ></textarea>
+          </p>
+          <input class="submitBtn" type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <a href="./happy-dance.html">Phil Curran, M.S. &copy; 2024</a>
+    </footer>
+  </body>
+</html>

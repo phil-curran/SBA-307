@@ -1,0 +1,267 @@
+@import url("https://fonts-googleapis-com/css2?family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+:root {
+  --black-1000: #000000;
+  --black-900: #1a1a1a;
+  --black-800: #333333;
+  --black-700: #4d4d4d;
+  --black-600: #666666;
+  --black-500: #808080;
+  --black-400: #999999;
+  --black-300: #b2b2b2;
+  --black-200: #cccccc;
+  --black-100: #e5e5e5;
+  --black-000: #ffffff;
+  --bright-green: #1abc9c;
+  --dark-green: #16a085;
+  --bright-lime: #2ecc71;
+  --dark-lime: #27ae60;
+  --bright-blue: #3498db;
+  --dark-blue: #2980b9;
+  --bright-blue: #00a8ff;
+  --dark-blue: #0097e6;
+  --bright-red: #e74c3c;
+  --dark-red: #c0392b;
+  --bright-red: #e84118;
+  --dark-red: #c23616;
+  --bright-yellow: #f1c40f;
+  --dark-yellow: #f39c21;
+  --bright-yellow: #fbc531;
+  --dark-yellow: #e1b12c;
+  --bright-orange: #e67e22;
+  --dark-orange: #d35400;
+  --bright-purple: #9b59b6;
+  --dark-purple: #8e44ad;
+  --british-light-gray: #353b48;
+  --british-dark-gray: #2f3640;
+  --white-000: #ffffff;
+  --white-100: #e5e5e5;
+  --white-200: #cccccc;
+  --white-300: #b2b2b2;
+  --white-400: #999999;
+  --white-500: #808080;
+  --white-600: #666666;
+  --white-700: #4d4d4d;
+  --white-800: #333333;
+  --white-900: #1a1a1a;
+  --white-1000: #000000;
+}
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+* {
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+}
+/* img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+} */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: var(--british-dark-gray);
+  list-style-type: none;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 200, "opsz" 48;
+  margin-right: 4px;
+  color: white;
+}
+
+nav ul li {
+  width: 175px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+li.active {
+  border-bottom: 3px solid #27ae60;
+}
+
+footer {
+  background-color: var(--british-dark-gray);
+  height: 65px;
+  width: 100%;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr;
+  padding: 20px;
+  border: 1px solid var(--british-dark-gray);
+  border-radius: 6px;
+  margin: 10px 0px;
+}
+
+.card .pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic img {
+  width: 60%;
+  height: 60%;
+}
+
+.card,
+.pic {
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.monogram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gear,
+.pc {
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 60px;
+}
+
+.gear {
+  animation-name: rotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.contact {
+  padding: 20px;
+  border: 1px solid var(--british-dark-gray);
+  border-radius: 6px;
+}
+
+.formField {
+  margin: 15px 0px;
+}
+
+input,
+::placeholder {
+  color: var(--white-400);
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--british-dark-gray);
+  border-radius: 6px;
+  margin: 10px 0px;
+}
+
+.contact label {
+  font-weight: bold;
+}
+
+.submitBtn {
+  background-color: var(--dark-green);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.submitBtn:hover {
+  background-color: var(--bright-green);
+}
+
+select {
+  background-color: inherit;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+}
+
+option {
+  background-color: var(--british-dark-gray);
+  color: #fff;
+}
+
+.gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}

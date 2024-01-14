@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Phil Curran, M.S.</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li class="monogram">
+            <img class="gear" src="./images/gear.svg" alt="" />
+            <img class="pc" src="./images//pc.svg" alt="" />
+          </li>
+          <li>
+            <a href="./index.html"
+              ><span class="material-symbols-outlined"> home </span> Home</a
+            >
+          </li>
+          <li class="active">
+            <span class="material-symbols-outlined"> build </span>
+            <select name="cars" id="cars">
+              <option value="projects">Projects</option>
+              <option value="saab">
+                <a href="#mindMachine">Mind Machine</a>
+              </option>
+            </select>
+          </li>
+          <li>
+            <a href="./resume.html"
+              ><span class="material-symbols-outlined"> description </span>
+              Resume</a
+            >
+          </li>
+          <li>
+            <a href="./about.html">
+              <span class="material-symbols-outlined"> contact_support </span
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <p>
+        Here you will find examples of projects I've worked on over the years.
+      </p>
+      <div class="card" id="mindMachine">
+        <div class="pic"><img src="./images/mind-machine.png" alt="" /></div>
+        <div class="description">
+          <h1 class="centered">Mind Machine</h1>
+          <p>
+            I always wanted one of those 'mind machines' advertised in the 90s,
+            but they went out of fashion before I could afford one. So I built
+            my own, using HTML5, CSS3, Pico.css, Javascript, and the Web Audio
+            API.
+          </p>
+          <p><strong>Features:</strong></p>
+          <ul>
+            <li>Base frequency controls 3 oscillators: low, mid, and high</li>
+            <li>
+              Dropdown menu to choose wave state (Alpha, Beta, Theta, Delta)
+            </li>
+            <li>
+              Beats Frequency slider adjusts beat frequency within wave state
+              range
+            </li>
+            <li>Dropdown menu to choose base frequency</li>
+          </ul>
+          <p>
+            Check it out on
+            <a href="https://github.com/phil-curran/mind-machine">Github</a>.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="./happy-dance.html">Phil Curran, M.S. &copy; 2024</a>
+    </footer>
+  </body>
+</html>
